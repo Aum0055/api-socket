@@ -25,6 +25,7 @@ app.get("/api/test", (req, res) => {
   console.log(req.body, "test");
   res.json({ message: "Custom API route" });
 });
+
 const customNamespace = io.of(`/api/create-namespace`);
 
 customNamespace.on("connection", (socket) => {
