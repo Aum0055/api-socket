@@ -8,4 +8,5 @@ const doc_controller_1 = require("../controllers/doc-controller");
 const doc_middleware_1 = require("../middleware/doc-middleware");
 const router = express_1.default.Router();
 router.get('/doc', doc_middleware_1.authMiddleware, doc_controller_1.document);
+router.post('/doc/test', doc_middleware_1.authMiddleware, doc_controller_1.postdocument);
 exports.default = router;

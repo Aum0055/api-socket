@@ -8,4 +8,5 @@ const anth_controller_1 = require("../controllers/anth-controller");
 const auth_middleware_1 = require("../middleware/auth-middleware");
 const router = express_1.default.Router();
 router.post('/auth/login', auth_middleware_1.validateLogin, anth_controller_1.Login);
+// router.post('/auth/logout', validateLogin, Logout);
 exports.default = router;
